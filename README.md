@@ -31,7 +31,7 @@ The dataset is loaded directly via URL to ensure full reproducibility.
 |--------|--------|
 | Salary Distribution | ![](images/Distribution_of_Yearly_Compensation.png) |
 | Salary by Country (Top 10) | ![](images/Compensation_Distribution_By_Country_Top10.png) |
-| Correlation Heatmap | ![](images/Correlation_Heatmap_of_Salary_WorkExperience_Satisfaction.png) |
+| Correlation Heatmap | ![](images/Correlation_Heatmap_of_Salary_WorkExperience_Satisfaction_2023.png) |
 | Salary vs Work Experience | ![](images/Salary_Vs_Work_Experience.png) |
 | Salary vs Job Satisfaction | ![](images/Salary_Vs_Work_Satisfaction.png) |
 | Outlier Removal | ![](images/Removing_Outliers_From_Dataset.png) |
