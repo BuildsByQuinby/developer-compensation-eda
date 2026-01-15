@@ -29,11 +29,13 @@ The dataset is loaded directly via URL to ensure full reproducibility.
 
 | Analysis | Preview |
 |--------|--------|
-| Salary Distribution | ![](images/salary_distribution.png) |
-| Salary by Country (Top 10) | ![](images/salary_by_country.png) |
-| Correlation Heatmap | ![](images/correlation_heatmap.png) |
-| Salary vs Work Experience | ![](images/salary_vs_experience.png) |
-| Salary vs Job Satisfaction | ![](images/salary_vs_satisfaction.png) |
+| Salary Distribution | ![](images/Distribution_of_Yearly_Compensation.png) |
+| Salary by Country (Top 10) | ![](images/Compensation_Distribution_By_Country_Top10.png) |
+| Correlation Heatmap | ![](images/Correlation_Heatmap_of_Salary_WorkExperience_Satisfaction.png) |
+| Salary vs Work Experience | ![](images/Salary_Vs_Work_Experience.png) |
+| Salary vs Job Satisfaction | ![](images/Salary_Vs_Work_Satisfaction.png) |
+| Outlier Removal | ![](images/Removing_Outliers_From_Dataset.png) |
+
 
 ---
 
