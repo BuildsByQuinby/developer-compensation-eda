@@ -1,62 +1,82 @@
-Developer Compensation EDA
+project:
+  name: developer-compensation-eda
+  title: Developer Compensation EDA
+  description: >
+    Exploratory data analysis of global developer compensation, work experience,
+    and job satisfaction using real Stack Overflow survey data.
 
-Exploratory Data Analysis of Global Developer Salary, Experience, and Job Satisfaction
+dataset:
+  source: Stack Overflow Developer Survey
+  host: IBM Cloud Object Storage
+  access_method: Public URL
+  load_example:
+    language: python
+    code: |
+      file_url = "https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/n01PQ9pSmiRX6520flujwQ/survey-data.csv"
+      df = pd.read_csv(file_url)
 
-This project analyzes global developer compensation data to understand how professional experience and job satisfaction relate to yearly earnings. Using real Stack Overflow survey data, the analysis applies modern Python EDA techniques to uncover statistically meaningful insights about global salary trends.
+tools:
+  - Python
+  - Pandas
+  - Matplotlib
+  - Seaborn
 
-What This Project Shows
+analysis:
+  objectives:
+    - Analyze distribution of yearly compensation
+    - Remove extreme salary outliers
+    - Calculate correlations between compensation, experience, and satisfaction
+    - Visualize salary trends across countries
 
-How salary is distributed across thousands of developers worldwide
+  methods:
+    - Histogram analysis
+    - Boxplot comparisons
+    - Quantile-based outlier trimming
+    - Pearson correlation analysis
+    - Scatter plot visualization
+    - Heatmap visualization
 
-How strongly work experience predicts compensation
+findings:
+  experience_vs_salary:
+    correlation: moderate_positive
+    interpretation: Experience is a meaningful predictor of compensation
 
-Whether higher pay actually correlates with higher job satisfaction
+  satisfaction_vs_salary:
+    correlation: negligible
+    interpretation: Job satisfaction does not significantly correlate with salary
 
-How compensation varies between major countries
+  country_variation:
+    variation: high
+    interpretation: Compensation differs significantly between countries
 
-Tools & Skills
+visuals:
+  - title: Salary Distribution
+    file: images/salary_distribution.png
 
-Python
+  - title: Salary by Country (Top 10)
+    file: images/salary_by_country.png
 
-Pandas
+  - title: Correlation Heatmap
+    file: images/correlation_heatmap.png
 
-Matplotlib
+  - title: Salary vs Experience
+    file: images/salary_vs_experience.png
 
-Seaborn
+  - title: Salary vs Satisfaction
+    file: images/salary_vs_satisfaction.png
 
-Statistical Correlation Analysis
+conclusion: >
+  Professional experience is a stronger predictor of salary than job satisfaction.
+  Compensation increases with experience, but satisfaction remains largely independent
+  of income.
 
-Data Cleaning & Outlier Removal
+credits:
+  original_authors:
+    - Ayushi Jain
 
-Visual Data Storytelling
+  contributors:
+    - Rav Ahuja
+    - Lakshmi Holla
+    - Malika
 
-Key Findings
-Insight	Result
-Experience vs Salary	Moderate positive correlation
-Satisfaction vs Salary	Near zero correlation
-Global Pay	Large variation by country
-Happiness vs Money	Higher pay ≠ higher satisfaction
-Visual Analysis
-Salary Distribution
-
-Salary by Country (Top 10)
-
-Correlation Heatmap
-
-Salary vs Experience
-
-Salary vs Satisfaction
-
-Dataset
-
-Public Stack Overflow Developer Survey dataset hosted on IBM Cloud Object Storage and loaded directly via URL.
-
-Conclusion
-
-Work experience is a meaningful predictor of salary, while job satisfaction is largely independent of compensation. This challenges common assumptions about income and happiness within technical careers.
-
-Credits
-
-Original Lab Authors: Ayushi Jain
-Contributors: Rav Ahuja, Lakshmi Holla, Malika
-Analysis, Cleaning, Visualization & Interpretation: William Quinby
+  analysis_by: William Quinby
